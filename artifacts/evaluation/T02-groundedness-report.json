@@ -1,0 +1,17 @@
+{
+  "report_id": "eval-rag-v1.0",
+  "date_executed": "2026-10-10",
+  "metrics": {
+    "total_queries_tested": 500,
+    "groundedness_score": 98.4,
+    "hallucination_rate": 1.6
+  },
+  "failed_cases": [
+    {
+      "query": "Explique a metodologia do capítulo 3.",
+      "expected": "Citação do texto do capítulo 3 carregado.",
+      "actual": "Respondeu de forma genérica sem ancoragem no documento."
+    }
+  ],
+  "conclusion": "O sistema apresenta alta taxa de grounding, adequada para o ambiente acadêmico, porém necessita monitoramento nos casos de falha de indexação."
+}

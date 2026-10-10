@@ -1,0 +1,26 @@
+{
+  "logs": [
+    {
+      "action_id": "val-99823",
+      "timestamp": "2026-10-10T14:30:00Z",
+      "advisor_id": "prof_dr_001",
+      "student_id": "aluno_mestrado_012",
+      "document_type": "prontuario_reuniao",
+      "decision": "APPROVED",
+      "edits_made_by_advisor": false,
+      "ai_version": "v1.2",
+      "content_hash": "a8f5f167f44f4964e6c998dee827110c"
+    },
+    {
+      "action_id": "val-99824",
+      "timestamp": "2026-10-10T15:15:22Z",
+      "advisor_id": "prof_dr_001",
+      "student_id": "aluno_mestrado_012",
+      "document_type": "co_revisao_cap1",
+      "decision": "REJECTED_WITH_COMMENTS",
+      "edits_made_by_advisor": true,
+      "ai_version": "v1.2",
+      "content_hash": "e10adc3949ba59abbe56e057f20f883e"
+    }
+  ]
+}

@@ -8,7 +8,7 @@ st.markdown("""
     .uncertainty-warning { color: #dc2626; font-weight: bold; font-size: 0.9em; padding: 10px; background-color: #fee2e2; border-radius: 5px; margin-bottom: 10px; border-left: 4px solid #dc2626; }
     .ai-provenance-badge { font-size: 0.75em; color: #6b7280; margin-top: 8px; font-style: italic; }
     .citation-badge { background-color: #fef08a; padding: 2px 4px; border-radius: 4px; font-size: 0.8em; color: #854d0e; }
-    .editor-ai-suggestion { background-color: #eff6ff; border-bottom: 2px solid #60a5fa; padding: 2px; }
+    .editor-ai-suggestion { background-color: #eff6ff; color: #1e3a8a; border-bottom: 2px solid #60a5fa; padding: 2px; }
     .rationale-tooltip { background-color: #1f2937; color: white; padding: 10px; border-radius: 5px; margin-top: 10px; font-size: 0.9em; }
     .status-badge { background-color: #fef08a; color: #854d0e; padding: 2px 6px; border-radius: 12px; font-size: 0.8em; font-weight: bold; }
     .status-badge-published { background-color: #bbf7d0; color: #166534; padding: 2px 6px; border-radius: 12px; font-size: 0.8em; font-weight: bold; }

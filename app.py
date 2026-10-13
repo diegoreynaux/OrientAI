@@ -1,4 +1,5 @@
 import streamlit as st
+from onboarding import render_onboarding
 
 st.set_page_config(page_title="OrientAI - OrientAI", layout="wide")
 
@@ -27,34 +28,8 @@ st.sidebar.markdown("---")
 st.sidebar.caption("🔒 Protegido pelas políticas OrientAI")
 
 if menu == "Dashboard (Onboarding)":
-    st.title("Dashboard")
-    
-    # Simulação do modal de Onboarding
-    if "onboarding_done" not in st.session_state:
-        st.session_state.onboarding_done = False
-
-    if not st.session_state.onboarding_done:
-        st.markdown("<div class='onboarding-modal'>", unsafe_allow_html=True)
-        st.warning("⚠️ **Treinamento Obrigatório OrientAI**")
-        st.write("Antes de continuar, você precisa realizar o treinamento obrigatório de integridade acadêmica e uso responsável da IA.")
-        if st.button("Concluir Treinamento", key="btn_onboarding"):
-            st.session_state.onboarding_done = True
-            st.rerun()
-        st.markdown("</div>", unsafe_allow_html=True)
-    else:
-        st.markdown("<div class='dashboard-content'>", unsafe_allow_html=True)
-        st.success("Onboarding concluído! Bem-vindo à sua área acadêmica.")
-        st.balloons()
-        
-        st.markdown("### Visão Geral da Pesquisa")
-        col1, col2, col3 = st.columns(3)
-        col1.metric(label="Reuniões Realizadas", value="12", delta="2 este mês")
-        col2.metric(label="Capítulos Validados", value="3/5", delta="60%")
-        col3.metric(label="Alertas de IA", value="0", delta="-1", delta_color="inverse")
-        
-        st.markdown("Aqui ficarão os gráficos de acompanhamento de orientações.")
-        st.markdown("</div>", unsafe_allow_html=True)
-
+    from onboarding import render_onboarding
+    render_onboarding()
 
 elif menu == "Chat com RAG":
     st.title("Chat com a Pesquisa (RAG) 📚")
